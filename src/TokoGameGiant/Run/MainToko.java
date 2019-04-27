@@ -4,8 +4,8 @@ import TokoGameGiant.SoftwareandGame.Game;
 
 public class MainToko {
     public static void main(String[] args) {
-        int totalA = 0;
-        double cashA = 0;
+        int totalA = 0, totalB = 0, totalC = 0;
+        double cashA = 0, cashB = 0, cashC = 0;
         Game[] a = new Game[3];
         Game[] b = new Game[4];
         Game[] c = new Game[5];
@@ -34,25 +34,25 @@ public class MainToko {
         System.out.println();
         System.out.printf("%-3s|%-12s|%-40s|%-15s|%-15s|%-15s|%-10s\n", "No", "Kode Game", "Nama", "Platform","Tipe", "Tahun Rilis", "Harga");
         i=1;
-        for (Game pelA : b) {
-            System.out.println(i+ "  |"+ pelA);
-            totalA += pelA.getHargagame() - pelA.diskon();
-            cashA = pelA.cashback(totalA);
+        for (Game pelB : b) {
+            System.out.println(i+ "  |"+ pelB);
+            totalB += pelB.getHargagame() - pelB.diskon();
+            cashB = pelB.cashback(totalB);
             i++;
         }
-        System.out.println("Pelanggan B mendapatkan cashback sebesar \t: Rp "+cashA);
-        System.out.println("Total yang harus dibayar Pelanggan B \t\t: Rp " + totalA);
+        System.out.println("Pelanggan B mendapatkan cashback sebesar \t: Rp "+cashB);
+        System.out.println("Total yang harus dibayar Pelanggan B \t\t: Rp " + totalB);
         System.out.println();
         System.out.printf("%-3s|%-12s|%-40s|%-15s|%-15s|%-15s|%-10s\n", "No", "Kode Game", "Nama", "Platform","Tipe", "Tahun Rilis", "Harga");
         i=1;
-        for (Game pelA : c) {
-            System.out.println(i+ "  |"+ pelA);
-            totalA += pelA.getHargagame() - pelA.diskon();
-            cashA = pelA.cashback(totalA);
+        for (Game pelC : c) {
+            System.out.println(i+ "  |"+ pelC);
+            totalC += pelC.getHargagame() - pelC.diskon();
+            cashC = pelC.cashback(totalC);
             i++;
         }
-        System.out.println("Pelanggan C mendapatkan cashback sebesar \t: Rp "+cashA);
-        System.out.println("Total yang harus dibayar Pelanggan C \t\t: Rp " + totalA);
+        System.out.println("Pelanggan C mendapatkan cashback sebesar \t: Rp "+cashC);
+        System.out.println("Total yang harus dibayar Pelanggan C \t\t: Rp " + totalC);
         System.out.println();
     }
 }
