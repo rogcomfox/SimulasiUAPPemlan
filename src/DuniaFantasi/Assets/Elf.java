@@ -30,6 +30,22 @@ public class Elf implements UniqueSkill{
         return attackpoin;
     }
 
+    public double getHealthpoin() {
+        return healthpoin;
+    }
+
+    public double getManapoin() {
+        return manapoin;
+    }
+
+    public double getDefensepoin() {
+        return defensepoin;
+    }
+
+    public double getMagicattack() {
+        return magicattack;
+    }
+
     @Override
     public double magicattackadd() {
         magicattack++;
@@ -38,7 +54,7 @@ public class Elf implements UniqueSkill{
 
     @Override
     public double healthadd() {
-        return healthpoin;
+        return 0;
     }
 
     @Override
@@ -49,7 +65,7 @@ public class Elf implements UniqueSkill{
 
     @Override
     public double defenseadd() {
-        return defensepoin;
+        return 0;
     }
 
     @Override
@@ -57,6 +73,6 @@ public class Elf implements UniqueSkill{
         return "Hunter";
     }
     public String toString(){
-        return String.format("Nama: %s\nClan: %s\nAttackPoin: %f\nDefensePoin: %f\nMagicAttack: %f");
+        return String.format("Nama: %s\nClan: %s\nHealthPoin: %.2f\nAttackPoin: %.2f\nManaPoin: %.2f\nDefensePoin: %.2f\nMagicAttack: %.2f", getName(), getClan(), getHealthpoin(), getAttackpoin(), getManapoin(), getDefensepoin(), getMagicattack());
     }
 }

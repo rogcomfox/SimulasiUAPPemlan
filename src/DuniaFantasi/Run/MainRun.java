@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class MainRun {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Elf a1 = new Elf("Joe", "Asterix", 40, 60, 70, 80, 90);
+        System.out.println("Welcome To Dunia Fantasi");
+        System.out.println("1. Buat Karakter");
     }
 }
