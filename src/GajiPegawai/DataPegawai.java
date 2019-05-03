@@ -15,6 +15,8 @@ public class DataPegawai {
     }
 
     public void tampikan(){
-        System.out.println();
+        for (Pegawai p: pegawaiList){
+            System.out.println(p.getNama() + " " + p.getGajiTotal());
+        }
     }
 }

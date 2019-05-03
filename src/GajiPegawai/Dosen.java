@@ -6,7 +6,7 @@ public class Dosen extends Pegawai implements Sertifikasi{
     private double gajiPerSks;
     private boolean certified;
 
-    public Dosen(String nama, String nip, String alamat, double gajiPokok, int jumlahSks, boolean certified) {
+    public Dosen(String nama, String nip, String alamat, int jumlahSks, boolean certified) {
         super(nama, nip, alamat);
         this.jumlahSks = jumlahSks;
         this.certified = certified;

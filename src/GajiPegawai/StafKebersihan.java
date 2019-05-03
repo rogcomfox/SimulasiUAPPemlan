@@ -8,7 +8,11 @@ public class StafKebersihan extends Pegawai {
     public StafKebersihan(String nama, String nip, String alamat, int poin) {
         super(nama, nip, alamat);
         this.poin = poin;
-        this.gajiPerpoin =
+        this.gajiPerpoin = 25000;
+    }
+
+    public double getGajiPerpoin() {
+        return super.getGajiPokok() + (poin * gajiPerpoin);
     }
 
     @Override
