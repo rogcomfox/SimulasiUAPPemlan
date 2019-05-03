@@ -4,7 +4,7 @@ public abstract class Pegawai {
     private String nip, alamat, nama;
     private double  gajiPokok;
 
-    public Pegawai(String nama, String nip, String alamat, double gajiPokok){
+    public Pegawai(String nama, String nip, String alamat){
         this.nama = nama;
         this.nip = nip;
         this.alamat = alamat;
