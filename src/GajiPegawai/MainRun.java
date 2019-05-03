@@ -10,6 +10,15 @@ public class MainRun {
         DataPegawai dataPegawai = new DataPegawai();
         dataPegawai.addPegawai(d1);
         dataPegawai.addPegawai(d2);
+        dataPegawai.addPegawai(sa1);
+        dataPegawai.addPegawai(sk1);
 
+        dataPegawai.tampikan();
+
+        for (Pegawai p: dataPegawai.pegawaiList){
+            if (p instanceof Sertifikasi){
+                System.out.println(p.getNama());
+            }
+        }
     }
 }

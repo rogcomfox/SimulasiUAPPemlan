@@ -4,14 +4,14 @@ public abstract class Pegawai {
     private String nip, alamat, nama;
     private double  gajiPokok;
 
-    public Pegawai(String nama, String nip, String alamat){
+    Pegawai(String nama, String nip, String alamat){
         this.nama = nama;
         this.nip = nip;
         this.alamat = alamat;
-        this.gajiPokok = gajiPokok;
+        this.gajiPokok = 2000000;
     }
 
-    public String getNama() {
+    String getNama() {
         return nama;
     }
 
@@ -23,7 +23,7 @@ public abstract class Pegawai {
         return nip;
     }
 
-    public double getGajiPokok() {
+    double getGajiPokok() {
         return gajiPokok;
     }
 
