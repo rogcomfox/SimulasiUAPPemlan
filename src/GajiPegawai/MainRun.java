@@ -13,11 +13,23 @@ public class MainRun {
         dataPegawai.addPegawai(sa1);
         dataPegawai.addPegawai(sk1);
 
+        System.out.println("Nomer 1");
         dataPegawai.tampikan();
 
+        System.out.println("Nomer 2");
         for (Pegawai p: dataPegawai.pegawaiList){
             if (p instanceof Sertifikasi){
                 System.out.println(p.getNama());
+            }
+        }
+        System.out.println("Nomer 3");
+        double totalGajiSertifikasi = 0;
+        for (Pegawai p: dataPegawai.pegawaiList){
+            if (p instanceof Sertifikasi){
+                if (((Sertifikasi) p).isCertified()){
+                    System.out.println(p.getNama());
+                    totalGajiSertifikasi += 2000000;
+                }
             }
         }
     }
