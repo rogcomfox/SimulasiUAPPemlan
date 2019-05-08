@@ -4,18 +4,18 @@ public class Programmer extends Pegawai implements Bonus{
 
     private int lembur;
 
-    public Programmer(String nim, String NIP, int tahunmasuk, double gajipokok, int lembur) {
-        super(nim, NIP, tahunmasuk, gajipokok);
+    public Programmer(String nama, String NIP, int tahunmasuk, double gajipokok, int lembur) {
+        super(nama, NIP, tahunmasuk, gajipokok);
         this.lembur = lembur;
     }
 
     @Override
     public double bonus() {
-        if (super.getTahunmasuk() >= 5){
-            return super.getGajipokok() * super.getTahunmasuk() * 0.1;
+        if (2019 - super.getTahunmasuk() >=5 ){
+            return super.getGajipokok() * super.getTahunmasuk() * (10/100);
         }
-        else if(super.getTahunmasuk() >= 1){
-            return super.getGajipokok() * super.getTahunmasuk() * 0.05;
+        else if(2019 - super.getTahunmasuk() >= 1){
+            return super.getGajipokok() * super.getTahunmasuk() * (5/100);
         }
         else {
             return 0;
@@ -29,5 +29,12 @@ public class Programmer extends Pegawai implements Bonus{
     @Override
     double gajiTotal() {
         return super.getGajipokok() + bonus();
+    }
+
+    public void Tampilkan(){
+        System.out.println("Nama = " + getNama() );
+        System.out.println("Gaji Pokok = " + (getGajipokok() / 1000000) + "jt");
+        System.out.println("Gaji Total = "+ (gajiTotal()/ 1000000) + "jt");
+        System.out.println("Bonus dan Tunjangan Via PoPay = "+ BonusLembur());
     }
 }

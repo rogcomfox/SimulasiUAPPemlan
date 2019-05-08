@@ -1,19 +1,19 @@
 package Uap;
 
 public abstract class Pegawai {
-    private String nim, NIP;
+    private String nama, NIP;
     private int tahunmasuk;
     private double gajipokok;
 
-    public Pegawai(String nim, String NIP, int tahunmasuk, double gajipokok) {
-        this.nim = nim;
+    public Pegawai(String nama, String NIP, int tahunmasuk, double gajipokok) {
+        this.nama = nama;
         this.NIP = NIP;
         this.tahunmasuk = tahunmasuk;
         this.gajipokok = gajipokok;
     }
 
-    public String getNim() {
-        return nim;
+    public String getNama() {
+        return nama;
     }
 
     public String getNIP() {
