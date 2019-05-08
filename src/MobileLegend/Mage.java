@@ -1,6 +1,6 @@
 package MobileLegend;
 
-public class Assasin implements Character {
+public class Mage implements Character{
     private final int attack;
     private final double defense;
     private int HP;
@@ -9,16 +9,15 @@ public class Assasin implements Character {
     private final int specialattack;
     private final int manaused;
 
-    public Assasin() {
-        this.attack = 19;
-        this.defense = 2;
+    public Mage() {
+        this.attack = 15;
+        this.defense = 2.5;
         this.HP = 80;
         this.manaregen = 24;
         this.mana = 93;
         this.specialattack = 51;
         this.manaused = 81;
     }
-
     @Override
     public int getHp() {
         return HP;

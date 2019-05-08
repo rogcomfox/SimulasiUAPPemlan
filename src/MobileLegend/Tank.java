@@ -1,21 +1,21 @@
 package MobileLegend;
 
-public class Assasin implements Character {
+public class Tank implements Character{
     private final int attack;
     private final double defense;
     private int HP;
     private final int manaregen;
     private int mana;
-    private final int specialattack;
+    private int specialactive;
     private final int manaused;
 
-    public Assasin() {
-        this.attack = 19;
-        this.defense = 2;
-        this.HP = 80;
-        this.manaregen = 24;
-        this.mana = 93;
-        this.specialattack = 51;
+    public Tank() {
+        this.attack = 11;
+        this.defense = 4.8;
+        this.HP = 100;
+        this.manaregen = 16;
+        this.mana = 75;
+        this.specialactive = 0;
         this.manaused = 81;
     }
 
@@ -41,7 +41,7 @@ public class Assasin implements Character {
             c.takeDamage(attack);
         }else{
             mana -= manaused;
-            c.takeDamage(specialattack);
+            c.takeDamage(specialactive);
         }
     }
     @Override

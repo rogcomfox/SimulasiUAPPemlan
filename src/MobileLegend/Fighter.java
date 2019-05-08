@@ -1,13 +1,13 @@
 package MobileLegend;
 
 public class Fighter implements Character{
-    private int attack;
-    private int defense;
+    private final int attack;
+    private final double defense;
     private int HP;
-    private int manaregen;
+    private final int manaregen;
     private int mana;
-    private int specialattack;
-    private int manaused;
+    private final int specialattack;
+    private final int manaused;
 
     public Fighter() {
         this.attack = 17;
@@ -17,14 +17,6 @@ public class Fighter implements Character{
         this.mana = 87;
         this.specialattack = 30;
         this.manaused = 55;
-    }
-
-    public int getDefense() {
-        return defense;
-    }
-
-    public int getSpecialattack() {
-        return specialattack;
     }
 
     @Override
